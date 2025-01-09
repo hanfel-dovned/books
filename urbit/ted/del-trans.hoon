@@ -164,7 +164,7 @@
   ;<  =ccru  bind:m  take-maybe-response
   ?~  ccru  $(addy t.addy)
   ;<  r=@t   bind:m  (extract-body u.ccru)
-  ?~  jun=(de-json:html r)  $(addy t.addy)
+  ?~  jun=(de:json:html r)  $(addy t.addy)
   %=  $
     leg   (weld (json-to-dino u.jun i.addy) leg)
     addy  t.addy
